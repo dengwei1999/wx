@@ -6,7 +6,8 @@
     "pages/third/third",
     "pages/map/map",
     "pages/list/list",
-    "pages/list/details"
+    "pages/list/details",
+    "pages/news/news"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -28,7 +29,7 @@
       "selectedIconPath": "images/icon_account_HL.png"    
     },
     {
-      "pagePath": "pages/list/list",
+      "pagePath": "pages/news/news",
       "text": "列表分页",
       "iconPath": "images/icon_speed.png",
       "selectedIconPath": "images/icon_speed_HL.png"

@@ -6,4 +6,4 @@
   <view class="doc-content">
   <rich-text nodes="{{myrich}}"></rich-text>
   </view>
-</view>
+</view>111111222222

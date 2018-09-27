@@ -5,9 +5,9 @@ const app = getApp()
 Page({
   data:{
     motto:'hello,body',
-    userInfo:{},
-    hasUserInfo:false,
-    canIUe:wx.canIUse('button.open-type.getUserInfo')
+    //userInfo:{},
+   // hasUserInfo:false,
+   // canIUe:wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap:function(){
@@ -16,7 +16,7 @@ Page({
     })
   },
   onLoad:function(){
-    
+    /*
     if(app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -42,15 +42,16 @@ Page({
           })
         }
       })
-    }
+    }*/
   },
- getUserInfo:function(e){
+ /*getUserInfo:function(e){
    console.log(e)
    app.globalData.userInfo =e.detail.userInfo
+   console.log("userinfo=" + e.detail.userInfo.nickName);
    this.setData ({
      userInfo:e.detail.userInfo,
      hasUserInfo:true
    })
- }
+ }*/
 
 })

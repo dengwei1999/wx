@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="page__hd">
+      <view class='btn_area'>
+      <button type="primary" bindtap='loadData' class='button1'>加载数据</button>
+      </view>
+
+    <view wx:for="{{newsdata}}" wx:key="index">
+      <view><image style="width:300px;height:200px;" src="{{item.pic}}"/></view>
+      <view><text>{{item.title}}</text></view>
+    </view>
+  </view>
+ </view>

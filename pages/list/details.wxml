@@ -1,0 +1,10 @@
+<view class="doc-container">
+  <view class="doc-title">活动详情</view>
+  
+    <view class="list" >      
+      <text class="list_title">{{title}}  {{id}}</text>
+      
+    </view>
+
+
+</view>

@@ -1,0 +1,14 @@
+<view class="doc-container">
+  <block wx:for="{{feeds}}" wx:key="{{item.id}}">
+    <view class="list" data-para="{{item}}" bindtap="tapItem">
+      <view class="view_preinfo">
+        <text class="list_preinfo">{{item.dsc}}</text>
+      </view>
+      <view><image style="width:98%;height:200px;" src="{{item.pic}}"/></view>
+      <text class="list_title">{{item.title}}</text>
+      
+    </view>
+  </block>
+
+
+</view>

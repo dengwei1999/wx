@@ -1,0 +1,31 @@
+<import src="../common/template_item.wxml"/>
+<view class ="container" bindtap="handleTap1" >
+<include src="../common/header.wxml"/>
+<view id="view1" catchtap="handleTap2" class="userinfo">
+<image class='userinfo-avatar' src=""></image>
+<text class="userinfo-nickname" data-userid="123456" data-user-name="dengwei">{{username}}</text>
+</view>
+<view class="usermatto" wx:if="{{show}}">
+  <text class="user-matto">用户名：{{userinfo.username}} </text>
+  <text class="user-matto" hidden='{{flag==1?true:false}}'>{{userinfo.age}}岁 </text>
+</view>
+
+<view class="usermatto" wx:else>
+  <text class="user-matto">还没有登录</text>
+</view>
+<view>{{ msg }}</view>
+<button catchtap="handleTap3">点击我</button>
+
+<template is="msgItem" data="{{...item}}"/>
+<template is="msgItem" data="{{...item2}}"/>
+<template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template>
+
+<template is="item" data="{{data:'index page trans data'}}"/>
+
+<include src="../common/footer.wxml"/>
+</view>

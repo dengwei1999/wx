@@ -6,7 +6,7 @@ Page({
   data:{
     motto:'hello,body',
     //userInfo:{},
-   // hasUserInfo:false,
+    //hasUserInfo:false,
    // canIUe:wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
@@ -16,8 +16,8 @@ Page({
     })
   },
   onLoad:function(){
-    /*
-    if(app.globalData.userInfo) {
+    
+   /* if(app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo:true
@@ -40,6 +40,7 @@ Page({
             userInfo:res.userInfo,
             hasUserInfo:true
           })
+          console.log("userinfo=" + res.userInfo.nickName);
         }
       })
     }*/

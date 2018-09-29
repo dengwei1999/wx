@@ -1,9 +1,14 @@
 <view class='container'>
+<view>openid2:{{openid2}}</view>
+
 <button ontap="getOpenIdTap">获取用户唯一标识openid</button>  
 <view>{{openid}}</view>
 <view>openid:{{openid}}</view>
 <view>session_key:{{session_key}}</view>
-
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+<view>nickName:{{nickName}}</view>
+<view>province:{{province}}</view>
+<view>city:{{city}}</view>
  <map id="map" longitude="116.397428" latitude="39.907913" scale="14" markers="{{markers}}" style="width:100%;height:300px;">
  </map>
 </view>

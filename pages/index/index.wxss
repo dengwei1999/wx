@@ -11,9 +11,9 @@
   display: block;  
   width: 160rpx;  
   height: 160rpx;  
-  margin: 20rpx;  
+  margin: 5rpx;  
   margin-top: 50rpx;  
-  border-radius: 50%;  
+  border-radius: 50%;   
   border: 2px solid #fff;  
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
 }
@@ -24,6 +24,6 @@
 
 .usermotto {
   margin-top: 200px;
-  text-align: center;
+  text-align: center; 
 }
 
